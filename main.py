@@ -4,6 +4,7 @@ from torchvision.transforms import Compose, Resize, CenterCrop, ToTensor, Normal
 import torch
 from PIL import Image
 from method1.interpret_cam import interpret, show_image_relevance
+from .utils import setup_cfg
 try:
     from torchvision.transforms import InterpolationMode
     BICUBIC = InterpolationMode.BICUBIC
